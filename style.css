@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header{
+    height: 3vw;
+    min-height: 40px;
+    background-color: #303030;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 1vw;
+    font-weight: bold;
+}
+header h1{
+    margin: 0;
+}
+.lang-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.lang-list li{
+    text-align: center;
+    color: white;
+    background-color: #303030;
+    width: 150px;
+}
+.lang-list li img{
+    width: 150px;   
+}
+.lang-list li:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.section-one{
+    background-color: #282828;
+    background-image: url(images/woman1.jpg);
+    background-repeat: no-repeat;
+    background-size: 30vw 30vw;
+    background-position: left bottom;
+    height: 400px;
+    padding-top: 20px;
+}
+.section-one h3, .section-one h2{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.section-one h2{
+    color:rgb(0, 166, 255);
+    margin-bottom: 30px;
+}
+.list-box{
+    float: right;
+    width: 70vw;
+}
+.first-list{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    column-gap: 100px;
+}
+.first-list li{
+    text-align: justify;
+    width: 25vw;
+    background-color: #282828;
+}
+.first-list li p{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+.section-two{
+    background-image: url(images/woman2.jpg);
+    background-repeat: no-repeat;
+    background-size: 30vw 30vw;
+    background-position: left bottom;
+    height: 500px;
+    padding-top: 20px;
+}
+.course-text{
+    text-align: center;
+    font-weight: bolder;
+    color: orange;
+    margin: 0;
+    text-transform: uppercase;
+}
+.java-text{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    color: black;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.list-box-two{
+    float: right;
+    width: 50vw;
+    margin-right: 20px;
+}
+.program-description{
+    list-style: disc;
+    color: rgb(0, 0, 0);   
+    gap: 30px;
+    column-gap: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: stretch;
+}
+.program-description li{
+    text-align: justify;
+    width: 50vw;
+}
+.program-description li::marker{
+    color: orange;
+}
+.item-header{
+    font-weight: bolder;
+}
+.item-description{
+    font-weight: lighter;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+}
+.icons{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+.icons li{
+    height: 5vw;
+}
+.icons li img{
+    height: 5vw;
+    width: 5vw;
+}
+.text-icon{
+    background-color: black;
+    color: white;
+    width: 65vw;
+    margin:0;
+}
+.text-icon p{
+    margin: 2vw 0 0 30px;
+    font-size: 1.5vw;
+}
+@media (max-width: 1075px) {
+    .list-box{
+        float: right;
+        width: 50vw;
+        margin-right: 1vw;
+    }
+    .section-one{
+        height: 110vh;
+        background-size: 40vw 40vw;
+        background-position: left;
+    }
+    .first-list li{
+        text-align: justify;
+        width: 50vw;
+        background-color: #282828;
+    }
+    .section-two{
+        height: 80vh;
+        background-size: 40vw 40vw;
+        background-position: left;
+    }
+}
+@media (max-width: 620px) {
+    header h1{
+        font-size: 5vw;
+    }
+    .section-one{
+        height: 800px;
+        font-size: 2.7vw;
+    }
+    .section-two{
+        font-size: 2.7vw;
+        height: 700px;
+    }
+}
